@@ -1,4 +1,13 @@
 version: '2'
 
 service:
-  web:
+  webserver:
+    build: './webserver'
+    ports:
+      - 80:80
+      - 443:443
+      -3306:3306
+    volumes:
+      - ./www:/var/www
+    external_host:
+      - local:0.0.0.0
