@@ -1,6 +1,6 @@
 version: '2'
 
-service:
+services:
   webserver:
     build: './webserver'
     ports:
