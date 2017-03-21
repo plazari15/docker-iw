@@ -11,3 +11,6 @@ RUN apt-get update && \
 
 # Ports exposes
 EXPOSE 80
+
+#After execution
+CMD /etc/init.d/apache2 start
