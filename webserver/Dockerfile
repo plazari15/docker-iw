@@ -14,3 +14,4 @@ EXPOSE 80
 
 #After execution
 CMD /etc/init.d/apache2 start
+#CMD ["/usr/sbin/apache2ctl", "-D FOREGROUND"]
